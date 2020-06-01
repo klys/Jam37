@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>z = 32*4;
 tex = background_get_texture(tex_red)
+color = c_red
 </string>
           </argument>
         </arguments>
@@ -49,10 +50,11 @@ tex = background_get_texture(tex_red)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>draw_set_color(color)
 
 d3d_draw_cone(x,y,z,x+32,y+32,z+32,tex,1,1,true,24)
 
+draw_set_color(c_white)
 </string>
           </argument>
         </arguments>

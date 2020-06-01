@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="64">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,23 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_red)
-draw_set_font(font0)
-draw_text(32,32,string(fps))
-
-// hand slots
-//draw_sprite_ext(spr_mano1, 0, 32,500+32,2,2,0,c_white,1)
-//draw_sprite_ext(spr_handSlot,0,96,500,4,4,0,c_white,1);
-
-
-//draw_sprite_ext(spr_mano2, 0, 32,500+(32*4)+32+32,2,2,0,c_white,1)
-//draw_sprite_ext(spr_handSlot,0,96,500+(32*4)+32,4,4,0,c_white,1);
-
-
-draw_sprite_ext(spr_moneda,0,32, 400, 2, 2,0,c_red,1)
-draw_text(96,400,string(global.coins))
-
-draw_set_color(c_white);
+            <string>global.coins = 0;
 </string>
           </argument>
         </arguments>
